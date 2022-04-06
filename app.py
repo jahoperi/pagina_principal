@@ -58,7 +58,7 @@ if selected == "Inicio":
    st.title(f"Has seleccionado {selected}")
    st.header("Un poco de comentarios")
    st.subheader("")
-   st.subheader("En mi página web se trata de pasarla bien, relax y contribuir en algo con los que estamos desempleados; creando una base de datos por si algún ofertante de alguna vacante quisiera dar un vistazo y tener opciones de candidatos.")
+   st.subheader("En mi página web se trata de pasarla bien, relax y contribuir en algo con quines están buscando empleo; creando una base de datos por si algún ofertante de alguna vacante quisiera dar un vistazo y tener opciones de candidatos.")
    st.subheader("")
    st.subheader("Son dos los proyectos, ideas, como quieran llamarlos")
    st.subheader("")
