@@ -58,7 +58,7 @@ if selected == "Inicio":
    st.title(f"Has seleccionado {selected}")
    st.header("Un poco de comentarios")
    st.subheader("")
-   st.subheader("En mi página web se trata de pasarla bien, relax y contribuir en algo con quien esté buscando empleo; creando una base de datos por si algún ofertante de alguna vacante quisiera dar un vistazo y tener opciones de candidatos.")
+   st.subheader("En mi página web se trata de distraernos unos minutos, relax; y contribuir en algo con el que busque empleo; creando una base de datos por si algún ofertante de alguna vacante quisiera dar un vistazo y tener opciones de candidatos.")
    st.subheader("")
    st.subheader("Son dos los proyectos, ideas, como quieran llamarlos")
    st.subheader("")
@@ -96,7 +96,7 @@ if selected == "CV":
       st.title(f"Has seleccionado {selected}") 
       st.subheader("Aqui puedes ver o descargar mi CV")
       st.subheader("https://tranquil-springs-16213.herokuapp.com/")
-      st.subheader("Gracias a Dios, ya tengo empleo")
+      
       
       
 if selected == "Contacto":
