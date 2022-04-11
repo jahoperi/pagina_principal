@@ -11,6 +11,8 @@ from streamlit_lottie import st_lottie  # pip install streamlit-lottie
 import streamlit.components.v1 as components
 import requests  # pip install requests
 
+from PIL import Image
+
 def load_lottieurl(url: str):
     r = requests.get(url)
     if r.status_code != 200:
@@ -39,17 +41,28 @@ st_lottie(lottie_hello, key = "hello")
 #          menu_icon = "cast", #optional
 #          default_index = 0,
 #      )
- 
 
-#2 horizontal menu
+#1 vertical menu
 selected = option_menu(
-    menu_title = "Menú principal ------------------------------------------->  jahoperi", #required
-    options = ["Inicio", "Proyecto1", "Proyecto2", "CV", "Contacto"], #required
+    menu_title = "Menú principal -------------------------->  jahoperi", #required
+    options = ["Inicio", "Mi canal de Youtube Chusconoticias", "La noticia del día", "Ciencia y tecnología", "Buscamos empleo", "CV", "Contacto"], #required
     icons = ["house", "book", "envelope"], #optional
     menu_icon = "cast", #optional
     default_index = 0, #optional
-    orientation = "horizontal",
-)    
+    
+    ) 
+
+ 
+
+#2 horizontal menu
+#selected = option_menu(
+#    menu_title = "Menú principal ------------------------------------------->  jahoperi", #required
+#    options = ["Inicio", "Proyecto1", "Proyecto2", "CV", "Contacto"], #required
+#    icons = ["house", "book", "envelope"], #optional
+#    menu_icon = "cast", #optional
+#    default_index = 0, #optional
+#    orientation = "horizontal",
+#)    
 
 
 
@@ -58,29 +71,37 @@ if selected == "Inicio":
    st.title(f"Has seleccionado {selected}")
    st.header("Un poco de comentarios")
    st.subheader("")
-   st.subheader("En mi página web se trata de distraernos unos minutos, relax; y contribuir en algo con el que busque empleo; creando una base de datos por si algún ofertante de alguna vacante quisiera dar un vistazo y tener opciones de candidatos.")
+   st.subheader("En mi página web se trata de pasarla bien, relax y contribuir en algo con los que estamos desempleados; creando una base de datos por si algún ofertante de alguna vacante quisiera dar un vistazo y tener opciones de candidatos.")
    st.subheader("")
-   st.subheader("Son dos los proyectos, ideas, como quieran llamarlos")
-   st.subheader("")
-   st.subheader("Proyecto1")
-   st.subheader("jahoperi Chusconoticias")
-   st.subheader("")
-   st.subheader("He creado un canal en Youtube")
-   st.subheader("Si es de tu agrado el canal, te invito a suscribirte, dejar tus comentarios y compartir")
-   st.subheader("")
-   st.subheader("")
-   st.subheader("Proyecto2") 
-   st.subheader("He creado una página web, donde todo aquel o aquella que este buscando empleo, puede dejar sus datos")
    
    
-if selected == "Proyecto1":
+if selected == "Mi canal de Youtube Chusconoticias":
    st.title(f"Has seleccionado {selected}") 
    st.subheader("Aquí pegaré los link conforme vaya subiendo mis videos")
    st.subheader("")
-   st.subheader("3/04/2022")
+   st.subheader("03/04/2022")
    st.subheader("")
    st.subheader("https://www.youtube.com/watch?v=1o9LDCbL8_U")
-if selected == "Proyecto2":
+   
+
+if selected == "La noticia del día":
+      st.title(f"Has seleccionado {selected}") 
+      st.subheader("Para que estes bien informado")
+      st.subheader("11/04/2022")
+      st.subheader("Revocación de mandato")
+      image = Image.open('imagen1.jpg')
+      st.image(image, caption='Ayer fui a votar, por ya sabes quien')  
+      
+
+if selected == "Ciencia y tecnología":
+      st.title(f"Has seleccionado {selected}") 
+      st.subheader("Los últimos avances en cuanto a conocimientos científicos y tecnológicos")
+      st.subheader("11/04/2022")
+      image = Image.open('imagen2.jpg')
+      st.image(image, caption='Historia del almacenamiento de datos')       
+
+
+if selected == "Buscamos empleo":
       st.title(f"Has seleccionado {selected}")
       st.subheader("Aquí el link de la página web para que puedas dejar tus datos.")
       st.subheader("Si eres de Recursos Humanos puedes realizar una búsqueda de algún candidato.")
@@ -90,8 +111,7 @@ if selected == "Proyecto2":
       st.subheader("")
       st.subheader("Aquí el link de la base de datos")
       st.subheader("https://obscure-anchorage-34419.herokuapp.com/")
-      
-     
+
 if selected == "CV":
       st.title(f"Has seleccionado {selected}") 
       st.subheader("Aqui puedes ver o descargar mi CV")
@@ -101,8 +121,9 @@ if selected == "CV":
       
 if selected == "Contacto":
    st.title(f"Has seleccionado {selected}") 
-   st.subheader("Les dejo mi correo electrónico")
+   st.subheader("Les dejo mi correo electrónico puedes escribir con toda confianza y respeto")
    st.subheader("jahoperi@gmail.com")
 
 
+                
                 
