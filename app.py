@@ -82,6 +82,10 @@ if selected == "Mi canal de Youtube Chusconoticias":
    st.subheader("03/04/2022")
    st.subheader("")
    st.subheader("https://www.youtube.com/watch?v=1o9LDCbL8_U")
+   st.subheader("")
+   st.subheader("12/04/2022")
+   st.subheader("")
+   st.subheader("https://www.youtube.com/watch?v=NAFDPzwhEyw") 
    
 
 if selected == "La noticia del día":
